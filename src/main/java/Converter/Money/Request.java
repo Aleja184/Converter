@@ -9,13 +9,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class Request {
-	public static void main(String[] args) {
-		String to= "USD";
-		String from= "COP";
-		String amount = "5000";
-		System.out.println(response(to,from,amount));
-		
-	}
 	
 	public static double response(String to,String from,String amount) {
 		String url = "https://api.apilayer.com/exchangerates_data/convert?to="+to+"&from="+from+"&amount="+amount;
